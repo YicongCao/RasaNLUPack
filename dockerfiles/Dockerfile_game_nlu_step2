@@ -1,0 +1,9 @@
+FROM rasanlu_base 
+
+WORKDIR /app
+
+COPY . ${WORKDIR}
+
+EXPOSE 5000
+
+ENTRYPOINT [ "make", "server", "-f", "Makefile_for_container", "PROJ_NAME=game_nlu" ]
