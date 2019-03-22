@@ -1,0 +1,61 @@
+{
+    "language": "zh",
+    "pipeline": [
+        {
+            "model": "wordembedding/total_word_feature_extractor_zh.dat",
+            "name": "MitieNLP",
+            "mitie_feature_extractor_fingerprint": 1810187658478185215,
+            "class": "rasa.nlu.utils.mitie_utils.MitieNLP"
+        },
+        {
+            "dictionary_path": null,
+            "name": "JiebaTokenizer",
+            "default_dict": "./default_dict.big",
+            "user_dicts": "./userdict/lego_nlu",
+            "class": "rasa.nlu.tokenizers.jieba_tokenizer.JiebaTokenizer"
+        },
+        {
+            "name": "MitieEntityExtractor",
+            "file": "component_2_MitieEntityExtractor.dat",
+            "class": "rasa.nlu.extractors.mitie_entity_extractor.MitieEntityExtractor"
+        },
+        {
+            "name": "EntitySynonymMapper",
+            "file": "component_3_EntitySynonymMapper.json",
+            "class": "rasa.nlu.extractors.entity_synonyms.EntitySynonymMapper"
+        },
+        {
+            "name": "RegexFeaturizer",
+            "file": "component_4_RegexFeaturizer.pkl",
+            "class": "rasa.nlu.featurizers.regex_featurizer.RegexFeaturizer"
+        },
+        {
+            "name": "MitieFeaturizer",
+            "class": "rasa.nlu.featurizers.mitie_featurizer.MitieFeaturizer"
+        },
+        {
+            "C": [
+                1,
+                2,
+                5,
+                10,
+                20,
+                100
+            ],
+            "gamma": [
+                0.1
+            ],
+            "kernels": [
+                "linear"
+            ],
+            "max_cross_validation_folds": 5,
+            "scoring_function": "f1_weighted",
+            "name": "SklearnIntentClassifier",
+            "file": "component_6_SklearnIntentClassifier.pkl",
+            "class": "rasa.nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
+        }
+    ],
+    "training_data": "training_data.json",
+    "trained_at": "20190322-093738",
+    "rasa_version": "0.15.0a5"
+}
