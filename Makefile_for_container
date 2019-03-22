@@ -1,0 +1,27 @@
+# 这是给内部容器用的 makefile
+
+.PHONY: clean train-nlu train-core cmdline server
+
+TEST_PATH=./
+
+ifndef PROJ_NAME
+$(error PROJ_NAME is not set)
+endif
+
+clean:
+	@echo "Nothing to do"
+
+train-out:
+	@echo "训练NLU模型，并输出到容器外部"
+	python -m rasa_nlu.train -c nluconfig/config_$(PROJ_NAME).yml --data traindata/$(PROJ_NAME)/demo-rasa_zh_game.md -o /opt/rasa/$(PROJ_NAME) --verbose
+
+server:
+	@echo "拉起NLU服务，使用自带模型"
+	python -m rasa_nlu.server -c nluconfig/config_$(PROJ_NAME).yml --path models/$(PROJ_NAME)
+
+train-and-server:
+	@echo "训练NLU模型，并输出到容器内部；然后拉起NLU服务"
+	@echo "STEP 1 正在训练NLU模型"
+	python -m rasa_nlu.train -c nluconfig/config_$(PROJ_NAME).yml --data traindata/$(PROJ_NAME)/demo-rasa_zh_game.md -o models/$(PROJ_NAME) --verbose
+	@echo "STEP 2 正在拉起NLU服务"
+	python -m rasa_nlu.server -c nluconfig/config_$(PROJ_NAME).yml --path models/$(PROJ_NAME)
