@@ -1,0 +1,835 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "您好"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "老兄"
+      },
+      {
+        "intent": "greet",
+        "text": "早上好"
+      },
+      {
+        "intent": "greet",
+        "text": "早安"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "今天",
+            "entity": "date"
+          }
+        ],
+        "text": "今天的天气怎么样"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "location"
+          }
+        ],
+        "text": "北京的天气怎么样"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "今天",
+            "entity": "date"
+          }
+        ],
+        "text": "今天[上海]的天气如何啊"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "昨天",
+            "entity": "date"
+          }
+        ],
+        "text": "昨天[上海]下雨了嘛"
+      },
+      {
+        "intent": "weather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "下周",
+            "entity": "date"
+          }
+        ],
+        "text": "下周[东京]天气怎么样"
+      },
+      {
+        "intent": "game_recommend",
+        "text": "我想玩游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "text": "帮我找个游戏玩"
+      },
+      {
+        "intent": "game_recommend",
+        "text": "搜索好玩的游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "RPG",
+            "entity": "type"
+          }
+        ],
+        "text": "给我找个RPG游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "任天堂",
+            "entity": "company"
+          }
+        ],
+        "text": "最近任天堂出了哪些游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "塞尔达传说",
+            "entity": "name"
+          }
+        ],
+        "text": "我想玩塞尔达传说"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "射击",
+            "entity": "type"
+          }
+        ],
+        "text": "帮我推荐几个射击游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "腾讯",
+            "entity": "company"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "value": "射击",
+            "entity": "type"
+          }
+        ],
+        "text": "腾讯新出的射击游戏叫什么"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 2,
+            "end": 7,
+            "value": "荒野大镖客",
+            "entity": "name"
+          }
+        ],
+        "text": "搜索荒野大镖客"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "马里奥",
+            "entity": "name"
+          }
+        ],
+        "text": "搜索马里奥游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "任天堂",
+            "entity": "company"
+          }
+        ],
+        "text": "帮我找找任天堂这些年出的大作"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "腾讯",
+            "entity": "company"
+          }
+        ],
+        "text": "我想玩腾讯游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "动作",
+            "entity": "type"
+          }
+        ],
+        "text": "有哪些好玩的动作类游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "text": "新发行的游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "iOS",
+            "entity": "platform"
+          }
+        ],
+        "text": "有哪些好玩的iOS游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "7.5",
+            "entity": "score"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "Android",
+            "entity": "platform"
+          }
+        ],
+        "text": "搜索评分高于7.5的Android版游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "9.5",
+            "entity": "score"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "value": "角色扮演",
+            "entity": "type"
+          }
+        ],
+        "text": "搜索9.5分以上的角色扮演游戏"
+      },
+      {
+        "intent": "game_recommend",
+        "text": "有哪些游戏比较好玩"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "怪物猎人",
+            "entity": "name"
+          }
+        ],
+        "text": "怪物猎人好玩吗"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "卡普空",
+            "entity": "company"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "value": "怪物猎人",
+            "entity": "name"
+          }
+        ],
+        "text": "卡普空公司出的怪物猎人好玩吗"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "R星",
+            "entity": "company"
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "value": "荒野大镖客",
+            "entity": "name"
+          }
+        ],
+        "text": "R星发行的荒野大镖客怎么样"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "腾讯",
+            "entity": "company"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "value": "英雄联盟",
+            "entity": "name"
+          }
+        ],
+        "text": "你喜欢腾讯制作的英雄联盟吗"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "微软",
+            "entity": "company"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "value": "极限竞速",
+            "entity": "name"
+          }
+        ],
+        "text": "微软的极限竞速媒体评分是多少"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "塞尔达传说",
+            "entity": "name"
+          }
+        ],
+        "text": "塞尔达传说怎么样"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "育碧",
+            "entity": "company"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "value": "尼尔",
+            "entity": "name"
+          }
+        ],
+        "text": "育碧的尼尔评价怎么样"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "实况足球",
+            "entity": "name"
+          }
+        ],
+        "text": "搜索实况足球的网友评价"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "战场女武神",
+            "entity": "name"
+          }
+        ],
+        "text": "看一下战场女武神的玩家评价"
+      },
+      {
+        "intent": "game_query_rating",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "极限竞速",
+            "entity": "name"
+          }
+        ],
+        "text": "极限竞速的玩家评价如何"
+      },
+      {
+        "intent": "game_query_year",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "塞尔达传说",
+            "entity": "name"
+          }
+        ],
+        "text": "塞尔达传说是哪一年出的"
+      },
+      {
+        "intent": "game_query_year",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "侠盗猎车手",
+            "entity": "name"
+          }
+        ],
+        "text": "侠盗猎车手的发行时间是"
+      },
+      {
+        "intent": "game_query_year",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "极品飞车",
+            "entity": "name"
+          }
+        ],
+        "text": "极品飞车下一部什么时候发布"
+      },
+      {
+        "intent": "game_query_year",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "超级马里奥",
+            "entity": "name"
+          }
+        ],
+        "text": "超级马里奥是什么时候上市的"
+      },
+      {
+        "intent": "game_query_year",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "怪物猎人",
+            "entity": "name"
+          }
+        ],
+        "text": "怪物猎人是哪一年上市的"
+      },
+      {
+        "intent": "game_query_year",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "任天堂",
+            "entity": "company"
+          },
+          {
+            "start": 4,
+            "end": 9,
+            "value": "色彩喷射团",
+            "entity": "name"
+          }
+        ],
+        "text": "任天堂的色彩喷射团什么时候开卖"
+      },
+      {
+        "intent": "game_query_year",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "死亡搁浅",
+            "entity": "name"
+          }
+        ],
+        "text": "在有生之年能玩到死亡搁浅吗"
+      },
+      {
+        "intent": "game_query_year",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "腾讯",
+            "entity": "company"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "value": "英雄联盟",
+            "entity": "name"
+          }
+        ],
+        "text": "腾讯是哪一年出的英雄联盟"
+      },
+      {
+        "intent": "game_query_company",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "荒野大镖客",
+            "entity": "name"
+          }
+        ],
+        "text": "荒野大镖客是哪家公司出的"
+      },
+      {
+        "intent": "game_query_company",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "孤岛惊魂",
+            "entity": "name"
+          }
+        ],
+        "text": "孤岛惊魂这个游戏是哪家公司出的"
+      },
+      {
+        "intent": "game_query_company",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "使命召唤",
+            "entity": "name"
+          }
+        ],
+        "text": "使命召唤是谁出的游戏"
+      },
+      {
+        "intent": "game_query_company",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "使命召唤",
+            "entity": "name"
+          }
+        ],
+        "text": "使命召唤是谁家的游戏"
+      },
+      {
+        "intent": "game_query_company",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "绝地求生",
+            "entity": "name"
+          }
+        ],
+        "text": "绝地求生是哪个公司出的游戏"
+      },
+      {
+        "intent": "game_query_company",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "极限竞速",
+            "entity": "name"
+          }
+        ],
+        "text": "极限竞速是哪个公司的游戏"
+      },
+      {
+        "intent": "game_query_platform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "塞尔达传说",
+            "entity": "name"
+          }
+        ],
+        "text": "塞尔达传说支持哪些平台"
+      },
+      {
+        "intent": "game_query_platform",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "PS4",
+            "entity": "platform"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "value": "超级马里奥",
+            "entity": "name"
+          }
+        ],
+        "text": "我的PS4可以玩超级马里奥吗"
+      },
+      {
+        "intent": "game_query_platform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "怪物猎人",
+            "entity": "name"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "PC",
+            "entity": "platform"
+          }
+        ],
+        "text": "怪物猎人支持PC吗"
+      },
+      {
+        "intent": "game_query_platform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "荒野大镖客",
+            "entity": "name"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "PC",
+            "entity": "platform"
+          }
+        ],
+        "text": "荒野大镖客有PC版吗"
+      },
+      {
+        "intent": "game_query_platform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "极限竞速",
+            "entity": "name"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "PC",
+            "entity": "platform"
+          }
+        ],
+        "text": "极限竞速PC能玩吗"
+      },
+      {
+        "intent": "game_query_platform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "塞尔达传说",
+            "entity": "name"
+          },
+          {
+            "start": 6,
+            "end": 9,
+            "value": "PS4",
+            "entity": "platform"
+          }
+        ],
+        "text": "塞尔达传说在PS4上能玩吗"
+      },
+      {
+        "intent": "game_query_platform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "怪物猎人",
+            "entity": "name"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "value": "switch",
+            "entity": "platform"
+          }
+        ],
+        "text": "怪物猎人可以在switch上玩吗"
+      },
+      {
+        "intent": "game_query_platform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "超级马里奥",
+            "entity": "name"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "value": "PC",
+            "entity": "platform"
+          }
+        ],
+        "text": "超级马里奥是PC游戏吗"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": [
+      {
+        "value": "腾讯",
+        "synonyms": [
+          "鹅厂",
+          "Tencent"
+        ]
+      },
+      {
+        "value": "网易",
+        "synonyms": [
+          "猪厂",
+          "黄易"
+        ]
+      },
+      {
+        "value": "任天堂",
+        "synonyms": [
+          "民间高手",
+          "老任",
+          "Nintendo"
+        ]
+      },
+      {
+        "value": "育碧",
+        "synonyms": [
+          "育婊",
+          "Uplay"
+        ]
+      },
+      {
+        "value": "卡普空",
+        "synonyms": [
+          "卡婊",
+          "Capcom"
+        ]
+      },
+      {
+        "value": "色彩喷射团",
+        "synonyms": [
+          "乌贼",
+          "乌贼暖暖",
+          "喷射战士",
+          "Splatoon"
+        ]
+      },
+      {
+        "value": "怪物猎人",
+        "synonyms": [
+          "怪猎",
+          "怪猎世界",
+          "怪物猎人世界",
+          "MHW"
+        ]
+      },
+      {
+        "value": "马里奥",
+        "synonyms": [
+          "马里欧",
+          "马力欧",
+          "超级马里奥",
+          "超级马里欧",
+          "Mario"
+        ]
+      },
+      {
+        "value": "iOS",
+        "synonyms": [
+          "ios",
+          "IOS",
+          "手机",
+          "苹果"
+        ]
+      },
+      {
+        "value": "Android",
+        "synonyms": [
+          "android",
+          "安卓"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+language: "zh"
+
+pipeline:
+- name: "MitieNLP"
+  model: "wordembedding/total_word_feature_extractor_game.dat"
+- name: "JiebaTokenizer"
+  default_dict: "./default_dict.big"
+  user_dicts: "./userdict/game_nlu"
+- name: "MitieEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "RegexFeaturizer"
+- name: "MitieFeaturizer"
+- name: "SklearnIntentClassifier"

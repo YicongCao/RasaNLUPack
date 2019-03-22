@@ -1,0 +1,1157 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "askweather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "今天",
+            "entity": "date"
+          }
+        ],
+        "text": "今天的天气怎么样"
+      },
+      {
+        "intent": "askweather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "北京",
+            "entity": "location"
+          }
+        ],
+        "text": "北京的天气怎么样"
+      },
+      {
+        "intent": "askweather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "今天",
+            "entity": "date"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "上海",
+            "entity": "location"
+          }
+        ],
+        "text": "今天上海的天气如何啊"
+      },
+      {
+        "intent": "askweather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "昨天",
+            "entity": "date"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "上海",
+            "entity": "location"
+          }
+        ],
+        "text": "昨天上海下雨了吗"
+      },
+      {
+        "intent": "askweather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "下周",
+            "entity": "date"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "value": "东京",
+            "entity": "location"
+          }
+        ],
+        "text": "下周东京天气怎么样"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "面包",
+            "entity": "resource"
+          }
+        ],
+        "text": "面包是怎么制作出来的"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "热狗",
+            "entity": "resource"
+          }
+        ],
+        "text": "热狗要怎么烹调"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "喷气背包",
+            "entity": "resource"
+          }
+        ],
+        "text": "我想做一个喷气背包"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "衣柜",
+            "entity": "resource"
+          }
+        ],
+        "text": "衣柜这种材料要怎么合成"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "蜡烛",
+            "entity": "resource"
+          }
+        ],
+        "text": "查一下要怎么合成蜡烛"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "木板",
+            "entity": "resource"
+          }
+        ],
+        "text": "制作木板需要哪些材料"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "土豆派",
+            "entity": "resource"
+          }
+        ],
+        "text": "我想做土豆派"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "土豆派",
+            "entity": "resource"
+          }
+        ],
+        "text": "制作土豆派的原料有哪些"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "卡丁车车身",
+            "entity": "resource"
+          }
+        ],
+        "text": "卡丁车车身要怎么做"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "铁盔",
+            "entity": "resource"
+          }
+        ],
+        "text": "帮我查一下铁盔的做法"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "法老权杖",
+            "entity": "resource"
+          }
+        ],
+        "text": "法老权杖可以由哪些材料制成"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "祭坛核心",
+            "entity": "resource"
+          }
+        ],
+        "text": "祭坛核心是用什么做的"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "灵魂宝钻",
+            "entity": "resource"
+          }
+        ],
+        "text": "怎样做一个灵魂宝钻这样的东西"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "远古巨剑",
+            "entity": "resource"
+          }
+        ],
+        "text": "乐高游戏中的远古巨剑道具该怎么获得"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "旅行背包",
+            "entity": "resource"
+          }
+        ],
+        "text": "旅行背包怎么制作"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "衣柜",
+            "entity": "resource"
+          }
+        ],
+        "text": "我想要衣柜"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 5,
+            "end": 6,
+            "value": "剑",
+            "entity": "resource"
+          }
+        ],
+        "text": "我想做一把剑"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "杯子",
+            "entity": "resource"
+          }
+        ],
+        "text": "杯子怎么做"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "载具",
+            "entity": "resource"
+          }
+        ],
+        "text": "我需要载具"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "烟花",
+            "entity": "resource"
+          }
+        ],
+        "text": "我想看烟花"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "跑车",
+            "entity": "resource"
+          }
+        ],
+        "text": "想开跑车"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "加多宝",
+            "entity": "resource"
+          }
+        ],
+        "text": "喝 加多宝"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "蛋糕",
+            "entity": "resource"
+          }
+        ],
+        "text": "饿了想吃蛋糕"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 1,
+            "end": 4,
+            "value": "烤玉米",
+            "entity": "resource"
+          }
+        ],
+        "text": "吃烤玉米"
+      },
+      {
+        "intent": "askrecipe",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "车",
+            "entity": "resource"
+          }
+        ],
+        "text": "我要开 车"
+      },
+      {
+        "intent": "askcombination",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "木块",
+            "entity": "resource"
+          }
+        ],
+        "text": "木块可以用来做什么"
+      },
+      {
+        "intent": "askcombination",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "石块",
+            "entity": "resource"
+          }
+        ],
+        "text": "石块能合成哪些材料"
+      },
+      {
+        "intent": "askcombination",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "木炭",
+            "entity": "resource"
+          }
+        ],
+        "text": "木炭能用来干什么"
+      },
+      {
+        "intent": "askcombination",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "玻璃",
+            "entity": "resource"
+          }
+        ],
+        "text": "有了玻璃可以做什么东西"
+      },
+      {
+        "intent": "askcombination",
+        "entities": [
+          {
+            "start": 1,
+            "end": 3,
+            "value": "皮革",
+            "entity": "resource"
+          }
+        ],
+        "text": "用皮革可以干什么"
+      },
+      {
+        "intent": "askcombination",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "弓箭",
+            "entity": "resource"
+          }
+        ],
+        "text": "弓箭有什么用处"
+      },
+      {
+        "intent": "askcombination",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "背包",
+            "entity": "resource"
+          }
+        ],
+        "text": "背包可以做用来制作飞天用的工具吗"
+      },
+      {
+        "intent": "askcombination",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "玉米",
+            "entity": "resource"
+          }
+        ],
+        "text": "有哪些用玉米制成的物品"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "卡丁车",
+            "entity": "resource"
+          }
+        ],
+        "text": "卡丁车是什么材料"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "铁盔",
+            "entity": "resource"
+          }
+        ],
+        "text": "铁盔是什么"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "铁盔",
+            "entity": "resource"
+          }
+        ],
+        "text": "什么是铁盔"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "复活卷轴",
+            "entity": "resource"
+          }
+        ],
+        "text": "复活卷轴是什么东东"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "鲜果蛋糕",
+            "entity": "resource"
+          }
+        ],
+        "text": "查询鲜果蛋糕的定义"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "水晶披风",
+            "entity": "resource"
+          }
+        ],
+        "text": "水晶披风是什么意思"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "水晶披风",
+            "entity": "resource"
+          }
+        ],
+        "text": "告诉我水晶披风的详细信息"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 4,
+            "end": 8,
+            "value": "水晶披风",
+            "entity": "resource"
+          }
+        ],
+        "text": "描述一下水晶披风"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "轮胎",
+            "entity": "resource"
+          }
+        ],
+        "text": "搜索轮胎"
+      },
+      {
+        "intent": "askdefinition",
+        "entities": [
+          {
+            "start": 2,
+            "end": 6,
+            "value": "水晶披风",
+            "entity": "resource"
+          }
+        ],
+        "text": "搜索水晶披风"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "保护",
+            "entity": "desc"
+          }
+        ],
+        "text": "查找能保护手指的物品"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "复活",
+            "entity": "desc"
+          }
+        ],
+        "text": "有没有可以让我复活的道具"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "安全",
+            "entity": "desc"
+          }
+        ],
+        "text": "怎样安全的度过黑夜"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "生命",
+            "entity": "desc"
+          }
+        ],
+        "text": "吃什么可以回复生命"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "砍伐",
+            "entity": "desc"
+          }
+        ],
+        "text": "有哪些可以用来砍伐的工具"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "天空",
+            "entity": "desc"
+          }
+        ],
+        "text": "我想向天空发射烟花"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 13,
+            "end": 15,
+            "value": "伤害",
+            "entity": "desc"
+          }
+        ],
+        "text": "有没有什么东西可以用来抵御伤害"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 9,
+            "end": 11,
+            "value": "饥饿",
+            "entity": "desc"
+          }
+        ],
+        "text": "用什么可以回复一些饥饿度"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "建造",
+            "entity": "desc"
+          }
+        ],
+        "text": "哪些材料可以用于建造"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "楼梯",
+            "entity": "desc"
+          }
+        ],
+        "text": "有没有跟楼梯相关的东西"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "卡丁车",
+            "entity": "desc"
+          }
+        ],
+        "text": "有哪些卡丁车的配件"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 7,
+            "end": 9,
+            "value": "矿石",
+            "entity": "desc"
+          }
+        ],
+        "text": "有哪些可以开采矿石的工具"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "照亮",
+            "entity": "desc"
+          }
+        ],
+        "text": "什么东西可以照亮周围"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "木制",
+            "entity": "desc"
+          }
+        ],
+        "text": "有哪些常见的木制物品"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 9,
+            "end": 11,
+            "value": "采矿",
+            "entity": "desc"
+          }
+        ],
+        "text": "用什么工具可以进行采矿"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "时间",
+            "entity": "desc"
+          }
+        ],
+        "text": "怎样获取时间"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 2,
+            "end": 4,
+            "value": "时间",
+            "entity": "desc"
+          }
+        ],
+        "text": "补充时间"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 9,
+            "end": 11,
+            "value": "武器",
+            "entity": "desc"
+          }
+        ],
+        "text": "有哪些资源可以用作武器"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 8,
+            "end": 10,
+            "value": "铁质",
+            "entity": "desc"
+          }
+        ],
+        "text": "乐高游戏里有哪些铁质物品"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "金制品",
+            "entity": "desc"
+          }
+        ],
+        "text": "我的世界里有哪些金制品"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "绿色",
+            "entity": "desc"
+          }
+        ],
+        "text": "什么东西是绿色的"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "防御力",
+            "entity": "desc"
+          }
+        ],
+        "text": "我想提升防御力"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "自行车",
+            "entity": "desc"
+          }
+        ],
+        "text": "要啥自行车啊"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "龙",
+            "entity": "desc"
+          }
+        ],
+        "text": "我想召唤龙"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "破坏",
+            "entity": "desc"
+          }
+        ],
+        "text": "哪个东西不可破坏呢"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 4,
+            "end": 6,
+            "value": "安全",
+            "entity": "desc"
+          }
+        ],
+        "text": "去哪里最安全"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 2,
+            "end": 3,
+            "value": "跑",
+            "entity": "desc"
+          }
+        ],
+        "text": "我想跑的更快"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "力量",
+            "entity": "desc"
+          }
+        ],
+        "text": "释放出神秘的力量"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "木质",
+            "entity": "desc"
+          }
+        ],
+        "text": "有哪些木质的物品"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 2,
+            "end": 3,
+            "value": "吃",
+            "entity": "desc"
+          }
+        ],
+        "text": "我想吃东西"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 5,
+            "end": 7,
+            "value": "木质",
+            "entity": "desc"
+          }
+        ],
+        "text": "帮我找一些木质材料"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 3,
+            "end": 5,
+            "value": "坚硬",
+            "entity": "desc"
+          }
+        ],
+        "text": "有哪些坚硬的材料"
+      },
+      {
+        "intent": "findresource",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "吃",
+            "entity": "desc"
+          }
+        ],
+        "text": "吃 饭啦"
+      },
+      {
+        "intent": "playlego",
+        "text": "乐高这个游戏好玩吗"
+      },
+      {
+        "intent": "playlego",
+        "text": "我想玩乐高无限"
+      },
+      {
+        "intent": "playlego",
+        "text": "我最喜欢乐高了"
+      },
+      {
+        "intent": "playlego",
+        "text": "腾讯出的乐高什么时候上线"
+      },
+      {
+        "intent": "playlego",
+        "text": "我能合成的材料好多啊"
+      },
+      {
+        "intent": "playlego",
+        "text": "你知道乐高游戏吗"
+      },
+      {
+        "intent": "parise",
+        "text": "你真聪明啊"
+      },
+      {
+        "intent": "parise",
+        "text": "你太聪明了"
+      },
+      {
+        "intent": "parise",
+        "text": "你真棒"
+      },
+      {
+        "intent": "parise",
+        "text": "你做的真好"
+      },
+      {
+        "intent": "parise",
+        "text": "给你点个赞"
+      },
+      {
+        "intent": "complain",
+        "text": "真没脑子啊"
+      },
+      {
+        "intent": "complain",
+        "text": "你真笨"
+      },
+      {
+        "intent": "complain",
+        "text": "你是个坏蛋"
+      },
+      {
+        "intent": "complain",
+        "text": "日了狗了"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "你好"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "Hi"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "Hello"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "早上好"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "你是谁"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "你有哪些功能"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "你是做什么的"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "你是哪里人"
+      },
+      {
+        "intent": "whoareyou",
+        "text": "你是男的女的"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "鲜果蛋糕",
+        "synonyms": [
+          "水果蛋糕",
+          "蛋糕"
+        ]
+      },
+      {
+        "value": "卡丁车",
+        "synonyms": [
+          "赛车",
+          "汽车"
+        ]
+      },
+      {
+        "value": "背包",
+        "synonyms": [
+          "包包",
+          "书包"
+        ]
+      },
+      {
+        "value": "剑",
+        "synonyms": [
+          "宝剑",
+          "长剑",
+          "亮剑"
+        ]
+      },
+      {
+        "value": "盔甲",
+        "synonyms": [
+          "铁甲",
+          "护甲"
+        ]
+      },
+      {
+        "value": "砍伐",
+        "synonyms": [
+          "砍树",
+          "劈柴"
+        ]
+      },
+      {
+        "value": "木质",
+        "synonyms": [
+          "木制"
+        ]
+      },
+      {
+        "value": "铁质",
+        "synonyms": [
+          "铁制"
+        ]
+      },
+      {
+        "value": "装饰",
+        "synonyms": [
+          "装饰品"
+        ]
+      }
+    ]
+  }
+}
