@@ -1,0 +1,1 @@
+MITIE wordrep 训练的embedding文件较大，请联系我提供该文件。
