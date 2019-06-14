@@ -3,7 +3,8 @@ FROM alpine/git as builder
 
 WORKDIR /app
 
-RUN git clone https://github.com/RasaHQ/rasa_nlu.git /app --progress
+RUN git clone https://github.com/RasaHQ/rasa_nlu.git /app --progress \
+    && git reset --hard 00e7d6e66f38c6f9a8f6d51203b7f5e611a8f2e1
 
 
 # STEP 2 install dependents
